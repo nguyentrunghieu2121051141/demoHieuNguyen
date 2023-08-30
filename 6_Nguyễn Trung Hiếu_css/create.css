@@ -1,0 +1,73 @@
+body{
+    background-color: lightblue;
+    font-family: sans-serif;
+  }
+.logo h1{
+    color: blue;
+    font-family: Klavika Bold;
+    text-align: center;
+    font-size: 50px;
+}
+.create {
+    width: 400px;
+    height: 570px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 100px;
+    margin: 0 auto;
+  }
+.create h2{
+    color: blue;
+    font-family: sans-serif;
+  }
+.create input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 20px;
+    size: 23px;
+  }
+.create button{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: aliceblue;    
+  }
+.create button:hover{
+    font-size: 15px;
+  }
+.radio input{
+    width: 10px;
+    height: 10px;
+
+  }
+.time{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.time body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+.time form span{
+    display: block;
+    margin: 20px 10;
+    font-family: 'Courier New', Courier, monospace;
+  }
+.time button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+  }
+
