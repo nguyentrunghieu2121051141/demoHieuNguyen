@@ -2,7 +2,32 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
  }
+
+ body{
+   background: url('../btlw/brick.jpg');
+   background-position-y: 200px;
+   background-position-x: 60px;
+ }
+ html{
+   scroll-behavior: smooth;
+ }
+ header h1{
+   padding-left: 20px;
+   padding-top: 32px;
+ }
+ header h1 a{
+   color: white;
+   text-decoration: none
+ }
+ header h1 a:hover{
+   color: beige;
+   transition: 0.5s ease;
+   font-size: 40px;
+ }
+ 
+ 
  .container{
     width: 980px;
     margin: 0 auto;
@@ -10,58 +35,17 @@
  header{
     width: 980px;
     height: 100px;
-    background-color: blue;
+    background-color: #e59121;
  }
- /*---------menu---------*/
- nav{
-    height: 35px;
-    background-color: #272f54;
+ header img{
+    padding-right: 10px;
+    padding-top: 10px;
  }
- nav .menu ul{
-    list-style: none;
 
- }
- nav .menu ul li{
-    float:right;
-    line-height: 35px;
-    margin-right: 25px;
- }
- nav .menu ul li:nth-child(1):hover a{
-    color: #cb7820;
-    transition: 0.3s ease;
- }
- nav .menu ul li:nth-child(2):hover a{
-    color: #cb7820;
-    transition: 0.3s ease;
- }
- nav .menu ul li:nth-child(3):hover a{
-    color: #cb7820;
-    transition: 0.3s ease;
- }
- nav .menu ul li a{
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
- }
- /*-------search---------*/
- nav .search{
-    line-height: 35px;
-    float: left;
-    margin-left: 25px;
- }
-nav .search input{
-    width: 380px;
-    height: 25px;
-    border: 1px black;
-    padding-left: 10px;
-    font-style: italic;
-}
-nav .search button{
-    width: 24px;
-    height: 24px;
-    background-color: #e0e0e1;
-}
-/*-------dropmenu--------*/
+
+ 
+
+/*---------------------------------dropmenu---------------------------------*/
 
 section .dropmenu ul{
     list-style-type: none;
@@ -111,6 +95,264 @@ section .dropmenu .dropdown:hover .dropdown-content{
 }
 section .dropmenu .dropdown .dropdown-content a{
     border-top:1px solid white;
+}
+
+
+ /*-----------------------------menu----------------------------*/
+ nav{
+    height: 35px;
+    background-color: #272f54;
+ }
+ nav .menu ul{
+    list-style: none;
+ }
+ nav .menu ul li{
+    float:right;
+    line-height: 35px;
+    margin-right: 25px;
+ }
+ nav .menu ul li:nth-child(1):hover a{
+    color: lightblue;
+    transition: 0.4s ease;
+    font-size: 17px;
+ }
+ nav .menu ul li:nth-child(2):hover a{
+    color: lightblue;
+    transition: 0.4s ease;
+    font-size: 17px;
+ }
+ nav .menu ul li:nth-child(3):hover a{
+    color: lightblue;
+    transition: 0.4s ease;
+    font-size: 17px;
+ }
+ nav .menu ul li a{
+    color: aqua;
+    font-size: 14px;
+    text-decoration: none;
+ }
+ /*-------------------------------search---------------------------*/
+ nav .search{
+   line-height: 35px;
+   float: left;
+   margin-left: 25px;
+}
+nav .search input{
+   width: 380px;
+   height: 25px;
+   border: 1px black;
+   padding-left: 10px;
+   font-style: italic;
+   border-radius: 5px;
+}
+nav .search button{
+   width: 24px;
+   height: 24px;
+   background-color: #e0e0e1;
+}
+
+/****************************CÁC THUỘC TÍNH CHUNG*******************************/
+.book_price{
+   color: #033801;
+   font-weight: bold;
+   margin-top: 15px;
+}
+.tag h2{
+   color: #e59121;
+   margin-top: 12px;
+}
+ .btn{
+   margin-top: 1px;
+   display: inline-block;
+   padding: 9px 3px;
+   border-radius: 5px ;
+   background-color: #089da1;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+ }
+ .btn:hover{
+   transition: 0.3s ease;
+   font-size: 20px;
+ }
+ .book_price sub{
+   font-weight: 100;
+   padding: 0 5px;
+}
+.write{
+   color: #919191;
+}
+.categories{
+   color: #089da1;
+   margin-top: 8px;
+}
+.book_price sub{
+   color: red;
+}
+.image{
+   width: 150px;
+   height: 220px;
+   margin: 0 auto;
+   cursor: pointer;
+   box-shadow: 0 0 8px black;
+   overflow: hidden;
+}
+.image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   transition: 0.3s;
+}
+.card:hover .image img{
+   transform: scale(1.1);
+}
+.card{
+   width: 250px;
+   height: 420px;
+   text-align: center;
+   padding: 5px;
+   border: 1px solid #919191;
+   margin: auto 20px;
+   background-color: azure;
+}
+.card:hover{
+   box-shadow: 0 0 5px #089da1;
+}
+.box{
+   width: 95%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 25px 0;
+}
+.book{
+   width: 100%;
+   height: 100vh;
+   margin-bottom: 35px;
+}
+.book h1{
+   font-size: 50px;
+   text-align: center;
+   margin-bottom: 35px;
+   color: #036803;
+}
+
+/*------------------------------------sach ban chay------------------------------------*/
+.sachbanchay{
+   width: 100%;
+   height: 100hv;
+   padding: 70px 0;
+}
+.sachbanchay h1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 30px;
+   font-size: 45px;
+   padding: .5rem 2rem;
+   border: var(--border);
+   color: #036803;
+}
+
+.sachbanchay .sachbanchay-box{
+   width: 95%;
+   height: 75vh;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   overflow: hidden;
+   overflow-x: scroll;
+   background-color: antiquewhite;
+}
+.sachbanchay .sachbanchay-box .sachbanchay-card{
+   width: 250px;
+   height: 500px;
+   text-align: center;
+   padding: 5px;
+   border: 1px solid #919191;
+   margin: auto 20px;
+   background-color: azure;
+}
+.sachbanchay .sachbanchay-box .sachbanchay-card:hover{
+   box-shadow: 0 0 5px #089da1;
+}
+.sachbanchay .sachbanchay-box .sachbanchay-card .sachbanchay-img img{
+   width: 150px;
+}
+::-webkit-scrollbar{
+   width: 10px;
+   height: 5px;
+}
+::-webkit-scrollbar-track{
+   box-shadow: inset 0 0 8px black;
+}
+::-webkit-scrollbar-thumb{
+   background-color: #089da1;
+   border-radius: 10px;
+}
+
+/*-------------------------------văn hocj việt nam------------------------------*/
+
+
+/*----------------------------------VĂN HOCJ NƯỚC NGOÀI--------------------------------------*/
+.vanhocnn{
+   width: 100%;
+   height: 100vh;
+   margin-bottom: 35px;
+   padding-top: 1150px;
+}
+.vanhocnn h1{
+   font-size: 50px;
+   text-align: center;
+   margin-bottom: 35px;
+   color: #036803;
+}
+
+
+/********************************************TRUYỆN TRANH*********************************************/
+
+.comic{
+   width: 100%;
+   height: 100vh;
+   margin-bottom: 35px;
+   padding-top: 1400px;
+}
+.comic h1{
+   font-size: 50px;
+   text-align: center;
+   margin-bottom: 35px;
+   color: #036803;
+}
+
+
+
+/*********************************************science*******************************************/
+.science{
+   width: 100%;
+   height: 100vh;
+   margin-bottom: 35px;
+   padding-top: 1400px;
+}
+.science h1{
+   font-size: 50px;
+   text-align: center;
+   margin-bottom: 35px;
+   color: #036803;
+}
+
+/******************************************************history**************************************************/
+.history{
+   width: 100%;
+   height: 100vh;
+   margin-bottom: 35px;
+   padding-top: 1400px;
+}
+.history h1{
+   font-size: 50px;
+   text-align: center;
+   margin-bottom: 35px;
+   color: #036803;
 }
 
 

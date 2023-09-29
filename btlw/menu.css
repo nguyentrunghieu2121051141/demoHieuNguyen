@@ -1,44 +1,59 @@
-ul{
-    list-style-type: none;
-    margin: 0%;
-    padding: 0;
-    overflow: hidden;
-    background-color: plum;
+.science{
+   width: 100%;
+   height: 100vh;
+   margin-bottom: 35px;
+   padding-top: 1400px;
 }
-li{
-    float: left;
+.science h1{
+   font-size: 50px;
+   text-align: center;
+   margin-bottom: 35px;
+   color: #036803;
 }
-li a, .dropbtn{
-    display: inline-block;
-    color: aliceblue;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.science .science-box{
+   width: 95%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 25px 0;
 }
-li a:hover, .dropbtn:hover .dropbtn{
-    background-color: red;
+.science .science-box .science-card{
+   width: 250px;
+   height: 420px;
+   text-align: center;
+   padding: 5px;
+   border: 1px solid #919191;
+   margin: auto 20px;
+   background-color: azure;
 }
-li.dropdown{
-    display: inline-block;
+.science .science-box .science-card:hover{
+   box-shadow: 0 0 5px #089da1;
 }
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: aliceblue;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px black ;
-    z-index: 1;
+.sciece .science-box .science-card .science-image{
+   width: 150px;
+   height: 220px;
+   margin: 0 auto;
+   cursor: pointer;
+   box-shadow: 0 0 8px black;
+   overflow: hidden;
 }
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+.science .science-box .science-card .science-image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   transition: 0.3s;
 }
-.dropdown-content a:hover {
-    background-color: red;
+.science .science-box .science-card:hover .science-image img{
+   transform: scale(1.1);
 }
-.dropdown:hover .dropdown-content{
-    display: block;
+.science .science-box .science-card .science-tag .write{
+   color: #919191;
+}
+.science .science-box .science-card .science-tag .categories{
+   color: #089da1;
+   margin-top: 8px;
+}
+.science .science-box .science-card .science-tag h2{
+   margin-top: 12px;
 }
