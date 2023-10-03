@@ -14,7 +14,7 @@
  header{
    width: 980px;
    height: 100px;
-   background-image: url('../btlw/background');
+   background-image: url('../btlw/bookshelve.jpg');
    background-size: contain;
 }
  header h1{   
@@ -40,7 +40,7 @@
  /*------------------------------------------------------------menu-------------------------------------------------------*/
  nav{
     height: 35px;
-    background-image: url('../btlw/background');
+    background-image: url('../btlw/bookshelve.jpg');
     background-size: contain;
  }
  nav .menu ul{
