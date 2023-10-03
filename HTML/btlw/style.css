@@ -14,7 +14,7 @@
  header{
    width: 980px;
    height: 100px;
-   background-image: url('../btlw/bookshelve.jpg');
+   background-image: url('bookshelve.jpg');
    background-size: contain;
 }
  header h1{   
