@@ -40,7 +40,7 @@
  /*------------------------------------------------------------menu-------------------------------------------------------*/
  nav{
     height: 35px;
-    background-image: url('../btlw/bookshelve.jpg');
+    background-image: url('bookshelve.jpg');
     background-size: contain;
  }
  nav .menu ul{
@@ -284,6 +284,10 @@ nav .search button{
 }
 
 .tag h2{
+   color: #e59121;
+   margin-top: 12px;
+}
+.tag h3{
    color: #e59121;
    margin-top: 12px;
 }
