@@ -1,0 +1,82 @@
+body{
+    background: url('bookshelve.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 45px;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.create {
+    width: 400px;
+    height: 630px;
+    background-color: rgba(255, 228, 181, 0.4);
+    border: 2px solid beige;
+    box-shadow:0px 0px 10px 10px beige;
+    text-align: center;
+    margin-top: 100px;
+    align-items: center;
+    margin: 0 auto;
+}
+.create h2{
+    color: #1b3951;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.create input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding-left: 20px;
+    size: 23px;
+    outline: none;
+}
+.create input:focus {
+    border: 2px solid #1a73e8;
+}
+.create button{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #A0522D;
+    color: aliceblue;    
+}
+.create button:hover{
+    font-size: 15px;
+}
+.radio input{
+    width: 20px;
+    height: 20px;
+}
+.radio{
+    color: #1b3951;
+    font-weight: bold;
+    word-spacing: 100px;
+    padding-left: 5px;
+}
+.time{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.time body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.time form span{
+    display: block;
+    margin: 20px 10;
+    font-family: 'Courier New', Courier, monospace;
+}
+.time button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+}
