@@ -35,8 +35,13 @@ function validate() {
         alert("Vui lòng nhập câu trả lời!");
         return false;
     }
+
+    alert("Vui lòng điền đầy đủ thông tin!");
     
     return true;
+
+    
+
     }
 
     
