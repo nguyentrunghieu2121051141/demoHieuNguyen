@@ -18,36 +18,26 @@ function validate() {
     alert("Vui lòng xác minh mật khẩu!");
     return false;
     }
-    if{
+    if(p2 != p3){
+        alert("Mật khẩu không đúng, vui lòng nhập lại!");
+        return false;
     }
+    
     if(p3== "") {
         alert("Vui lòng nhập mail!");
         return false;
-        }
-        if(p4 == "") {
+    }
+    if(p4 == "") {
         alert("Vui lòng nhập số điện thoại!");
         return false;
-        }
-        if(p5 == "") {
+    }
+    if(p5 == "") {
         alert("Vui lòng nhập câu trả lời!");
         return false;
-        }
-    
-    
-    alert("Xin hãy điền đúng thông tin!")
+    }
     
     return true;
     }
-    var password = document.getElementById("password")
-  , password-repeat = document.getElementById("password-repeat");
 
-function validatePassword(){
-  if(password.value != password-repeat.value) {
-    password-repeat.setCustomValidity("Mật khẩu không đúng. Vui lòng nhập lại");
-  } else {
-    password-repeat.setCustomValidity('');
-  }
-}
-
-password.onchange = validatePassword;
-password-repeat.onkeyup = validatePassword;
+    
+    
