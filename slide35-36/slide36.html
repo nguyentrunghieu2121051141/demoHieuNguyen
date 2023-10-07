@@ -6,7 +6,7 @@
 
 </head>
 <body>
-<!-- Nhúng file JavaScript -->
+
 <script language="javascript" src="kiemtra.js"></script>
     <form action="" method="POST" onsubmit="return validate()">
     <div class="register">
@@ -14,33 +14,33 @@
 
     <hr>
     
-    Tên đăng nhập<input type="text" name="username" minlength="8" maxlength="20" id="username">
+    Tên đăng nhập(*)<input type="text" name="username" minlength="8" maxlength="20" id="username">
     <br>
-    Mật khẩu<input type="password" name="password" minlength="8" maxlength="20" id="password">
+    Mật khẩu(*)<input type="password" name="password" minlength="8" maxlength="20" id="password">
     <br>
-    Nhập lại mật khẩu<input type="password" name="password-repeat" id="password-repeat">
+    Nhập lại mật khẩu(*)<input type="password" name="password-repeat" id="password-repeat">
     <br>
-    Quốc tịch<select>
+    Quốc tịch(*)<select>
                         <option value="1">Việt Nam</option>
                         <option value="2">Lào</option>
                         <option value="3">Campuchia</option>
                     </select>
                 <br>
-    Email<input type="email" name="mail" id="mail">
+    Email(*)<input type="email" name="mail" id="mail">
     <br>
-    Số điện thoại<input type="tel" name="tel" length="10" id="tel">
+    Số điện thoại(*)<input type="tel" name="tel" length="10" id="tel">
     <br>
-    Câu hỏi bí mật<select>
+    Câu hỏi bí mật(*)<select>
                         <option value="1">Bạn thích bài hát nào</option>
                         <option value="2">Bạn thích quyển sách gì</option>
                         <option value="3">Bạn thích bộ phim nào</option>
                     </select>
     <br>
-    Trả lời<input type="text" name="answer" id="answer">
+    Trả lời(*)<input type="text" name="answer" id="answer">
     <br>
     <button type="submit" name="btncheck" id="btncheck" value="nut">Kiểm tra</button>
     <br>
-    <button onclick="Login()">Đăng ký</button>
+    <button type="submit" onclick="Login()">Đăng ký</button>
     </form>
 </body>
 </html>
