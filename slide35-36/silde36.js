@@ -1,48 +1,26 @@
-function validate() {
-    var u = document.getElementById("username").value;
-    var p1 = document.getElementById("password").value;
-    var p2 = document.getElementById("password-repeat").value;
-    var p3 = document.getElementById("mail").value;
-    var p4 = document.getElementById("tel").value;
-    var p5 = document.getElementById("answer").value;
-    
-    if(u== "") {
-    alert("Vui lòng nhập tên!");
-    return false;
-    }
-    if(p1 == "") {
-    alert("Vui lòng nhập mật khẩu!");
-    return false;
-    }
-    if(p2 == "") {
-    alert("Vui lòng xác minh mật khẩu!");
-    return false;
-    }
-    if(p2 != p3){
-        alert("Mật khẩu không đúng, vui lòng nhập lại!");
-        return false;
-    }
-    
-    if(p3== "") {
-        alert("Vui lòng nhập mail!");
-        return false;
-    }
-    if(p4 == "") {
-        alert("Vui lòng nhập số điện thoại!");
-        return false;
-    }
-    if(p5 == "") {
-        alert("Vui lòng nhập câu trả lời!");
-        return false;
-    }
+function validation(){
+    const password1El = document.getElementById('password1');
+    const password2El = document.getElementById('password2');
+    let passwordsMatch = false;
 
-    alert("Vui lòng điền đầy đủ thông tin!");
-    
-    return true;
-
-    
-
-    }
-
-    
-    
+    if (password1El.value === password2El.value) {
+        passwordsMatch = true;
+        password1El.style.borderColor = 'green';
+        password2El.style.borderColor = 'green';
+      } 
+      else {
+        passwordsMatch = false;
+        message.textContent = 'Mật khẩu không trùng. Vui lòng nhập lại mật khẩu!';
+        message.style.color = 'red';
+        messageContainer.style.borderColor = 'red';
+        password1El.style.borderColor = 'red';
+        password2El.style.borderColor = 'red';
+        return;
+      }
+      
+      if (isValid && passwordsMatch) {
+        message.textContent = 'Đăng kí thành kông!';
+        message.style.color = 'green';
+        messageContainer.style.borderColor = 'green';
+      }
+}

@@ -7,18 +7,18 @@
 </head>
 <body>
 
-<script language="javascript" src="kiemtra.js"></script>
+<script language="javascript" src="silde36.js"></script>
     <form action="" method="POST" onsubmit="return validate()">
     <div class="register">
     <h1>Đăng ký</h1>
 
     <hr>
     
-    Tên đăng nhập(*)<input type="text" name="username" minlength="8" maxlength="20" id="username">
+    Tên đăng nhập(*)<input type="text" name="username" minlength="8" maxlength="20" id="username" required>
     <br>
-    Mật khẩu(*)<input type="password" name="password" minlength="8" maxlength="20" id="password">
+    Mật khẩu(*)<input type="password" id="password1" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Mật khẩu phải có ít nhất một chữ số, một kí tự đặc biệt và một chữ cái viết hoa" />
     <br>
-    Nhập lại mật khẩu(*)<input type="password" name="password-repeat" id="password-repeat">
+    Nhập lại mật khẩu(*)<input type="password" id="password2" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
     <br>
     Quốc tịch(*)<select>
                         <option value="1">Việt Nam</option>
@@ -26,9 +26,9 @@
                         <option value="3">Campuchia</option>
                     </select>
                 <br>
-    Email(*)<input type="email" name="mail" id="mail">
+    Email(*)<input type="email" name="mail" id="mail" required>
     <br>
-    Số điện thoại(*)<input type="tel" name="tel" length="10" id="tel">
+    Số điện thoại(*)<input type="tel" id="phone" name="phone" required>
     <br>
     Câu hỏi bí mật(*)<select>
                         <option value="1">Bạn thích bài hát nào</option>
@@ -36,11 +36,12 @@
                         <option value="3">Bạn thích bộ phim nào</option>
                     </select>
     <br>
-    Trả lời(*)<input type="text" name="answer" id="answer">
+    Trả lời(*)<input type="text" name="answer" id="answer" required>
     <br>
-    <button type="submit" name="btncheck" id="btncheck" value="nut">Kiểm tra</button>
+    <button type="checkbox" onclick="validation()">Kiểm tra</button>
     <br>
-    <button type="submit" onclick="Login()">Đăng ký</button>
+    <button type="submit">Đăng ký</button>
+    </div>
     </form>
 </body>
 </html>
