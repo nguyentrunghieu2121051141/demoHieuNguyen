@@ -4,22 +4,25 @@
     $JPY = 200;
     $EUR = 27000;
     $amount = $_POST["amount"];
-    echo"$amount VNĐ đổi được ";
-    if($_POST["currency"] == "USD"){
+    if(isset($_POST["currency"]) == "USD"){
+        echo"$amount USD đổi được ";
         echo $amount * $USD ;
-        echo" USD";
+        echo" VND";
     }
-    elseif($_POST["currency"] == "EUR"){
+    elseif(isset($_POST["currency"]) == "EUR"){
+        echo"$amount EUR đổi được ";
         echo $amount * $EUR;
-        echo" EUR";
+        echo" VND";
     }
-    elseif($_POST["currency"] == "JPY"){
+    elseif(isset($_POST["currency"]) == "JPY"){
+        echo"$amount JPY đổi được ";
         echo $amount * $JPY;
-        echo" JPY";
+        echo" VND";
     }
     else{
+        echo"$amount AUD đổi được ";
         echo $amount * $AUD;
-        echo" AUD";
+        echo" VND";
     }
     
 ?>
