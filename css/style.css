@@ -1,0 +1,531 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ }
+ 
+ body{
+   background-color: #f0f0f0;
+ }
+ html{
+   scroll-behavior: smooth;
+ }
+ header{
+   width: 980px;
+   height: 100px;
+   background-image: url('bookshelve.jpg');
+   background-size: contain;
+}
+ header h1{   
+   padding: 24px 20px;
+   font-size: 50px;
+ }
+ header h1 a{
+   color: #c5934e;
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   word-spacing: 20px;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+ header h1 a i{
+   color: #c5934e;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+ 
+ .container{
+    width: 980px;
+    margin: 0 auto;
+ }
+ 
+
+ /*------------------------------------------------------------menu-------------------------------------------------------*/
+ nav{
+    height: 35px;
+    background-color: #55D6C2;
+    background-size: contain;
+ }
+ .menu ul{
+    list-style: none;
+ }
+ .menu ul li{
+    float:right;
+    line-height: 35px;
+    margin-right: 25px;
+    position: relative;
+ }
+ .menu ul li sub{
+   background-color: red;
+   color: white;
+   display: flex;
+   height: 15px;
+   width: 15px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   right: -15px;
+ }
+ .menu ul li:nth-child(1):hover {
+   transition: 0.4s ease;
+   font-size: 17px;
+ }
+.menu ul li:nth-child(2):hover a{
+   transition: 0.4s ease;
+   font-size: 17px;
+ }
+.menu ul li:nth-child(3):hover a{
+   transition: 0.4s ease;
+   font-size: 17px;
+ }
+ .menu .iconCart{
+   color: #f9f9f9;
+   font-size: 14px;
+   text-decoration: none;
+   cursor: pointer;
+ }
+.menu ul li a{
+   color: #f9f9f9;
+   font-size: 14px;
+   text-decoration: none;
+ }
+ /*-----------------------------------------------------dropmenu-----------------------------------------------*/
+
+.dropmenu ul{
+   list-style-type: none;
+   margin: 0%;
+   padding: 0;
+   overflow: hidden;
+   background-color: #0D4C48;
+   width: 980px;
+   justify-content: space-between;
+   display: flex;
+}
+.dropmenu li a, .dropbtn{
+   display: inline-block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+.dropmenu ul li a:hover, .dropbtn:hover .dropbtn{
+   background-color: #F05A22;
+   transition: 0.2s ease;
+}
+.dropmenu li.dropdown{
+   display: inline-block;
+}
+.dropmenu .dropdown-content{
+   display: none;
+   position: absolute;
+   background-color: #F05A22;
+   min-width: 120px;
+   z-index: 1;
+}
+.dropmenu .dropdown-content a{
+   color: white;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+   font-size: 12px;
+}
+.dropmenu .dropdown-content a:hover {
+   background-color: #0D4C48 ;
+   transition: 0.2s ease;
+}
+.dropmenu .dropdown:hover .dropdown-content{
+   display: block;
+}
+.dropmenu .dropdown .dropdown-content a{
+   border-top:1px solid white;
+}
+
+
+ /*---------------------------------------------------------search---------------------------------------------------*/
+.search{
+   line-height: 35px;
+   float: left;
+   margin-left: 25px;
+}
+.search input:focus{
+   border: 2px solid #1a73e8;
+}
+.search input{
+   width: 380px;
+   height: 25px;
+   border: 1px black;
+   padding-left: 10px;
+   font-style: italic;
+   border-radius: 5px;
+   outline: none;
+}
+.search button{
+   width: 24px;
+   height: 24px;
+   background-color: #e0e0e1;
+   border: none;
+}
+
+
+
+/*------------------------------------sach ban chay------------------------------------*/
+.sachbanchay{
+   width: 100%;
+   height: 75hv;
+   padding: 70px 0;
+}
+.sachbanchay h1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 30px;
+   font-size: 45px;
+   padding: .5rem 2rem;
+   color: #3b3b3b;
+}
+.sachbanchay h1 i{
+   color: #FF3C3C;
+}
+.book-box{
+   width: 95%;
+   height: 65vh;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   overflow: hidden;
+   overflow-x: scroll;
+   background-color: #f9f9f9;
+}
+.book-card{
+   width: 250px;
+   height: 420px;
+   text-align: center;
+   padding: 5px;
+   margin: auto 20px;
+}
+
+.book-card:hover{
+   box-shadow: 0 0 5px gray;
+}
+.book-img img{
+   width: 150px;
+}
+::-webkit-scrollbar{
+   width: 10px;
+   height: 5px;
+}
+::-webkit-scrollbar-track{
+   box-shadow: inset 0 0 8px black;
+}
+::-webkit-scrollbar-thumb{
+   background-color: #1b3951;
+   border-radius: 10px;
+}
+/*********************************************GIẢM GIÁ********************************************/
+.giamgia{
+   width: 100%;
+   height: 100hv;
+   
+}
+.giamgia h1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 30px;
+   font-size: 45px;
+   padding: .5rem 2rem;
+   color: #3b3b3b;
+}
+.giamgia h1 i{
+   color: #FF3C3C;
+}
+.giamgia .giamgia-box{
+   width: 95%;
+   height: 65vh;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   overflow: hidden;
+   overflow-x: scroll;
+   background-color: #f9f9f9;
+}
+
+/********************************************GIAO DIỆN*******************************************/
+.box{
+   width: 95%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 25px 0;
+   font-family:  sans-serif, Helvetica, Arial;
+}
+.border{
+   width: 100%;
+   height: 45px;
+   background-color: #0D4C48;
+}
+.card{
+   width: 250px;
+   height: 420px;
+   text-align: center;
+   padding: 5px;
+   margin: auto 20px;
+   background-color: #f9f9f9;
+}
+.card:hover{
+   box-shadow: 0 0 5px gray;
+}
+.image{
+   width: 150px;
+   height: 220px;
+   margin: 0 auto;
+   cursor: pointer;
+   box-shadow: 0 0 8px black;
+   overflow: hidden;
+}
+.image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   transition: 0.3s;
+}
+.card:hover .image img{
+   transform: scale(1.1);
+}
+
+.tag h3{
+   color: #e59121;
+   margin-top: 12px;
+}
+.write{
+   color: #919191;
+}
+.categories{
+   color: #089da1;
+   margin-top: 8px;
+}
+.book_price{
+   color: #033801;
+   font-weight: bold;
+   margin-top: 15px;
+}
+ .book_price sub{
+   font-weight: 100;
+   padding: 0 5px;
+   color: red;
+}
+
+.btn{
+   margin-top: 1px;
+   display: inline-block;
+   padding: 9px 3px;
+   border-radius: 5px ;
+   background-color: #089da1;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+ }
+ .btn:hover{
+   transition: 0.3s ease;
+   font-size: 20px;
+ }
+ .button button{
+   width: 220px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #A0522D;
+    color: white;
+    align-items: center;
+}
+.button button:hover{
+   transition: 0.3s ease;
+   font-size: 20px;
+}
+/***********************************************VĂN HỌC VIỆT NAM***********************************/
+.vanhocvn{
+   width: 100%;
+   margin-bottom: 35px;
+   background-color: #f9f9f9;
+   text-align: center;
+}
+
+.vanhocvn .border h1{
+   font-size: 20px;
+   padding-top: 10px;
+   padding-left: 10px;
+   text-align: left;
+   margin-bottom: 35px;
+   color: #f9f9f9;
+}
+
+
+/*----------------------------------VĂN HỌC NƯỚC NGOÀI--------------------------------------*/
+.vanhocnn{
+   width: 100%;
+   margin-bottom: 35px;
+   background-color: #f9f9f9;
+   text-align: center;
+}
+.vanhocnn .border h1{
+   font-size: 20px;
+   padding-top: 10px;
+   padding-left: 10px;
+   text-align: left;
+   margin-bottom: 35px;
+   color: #f9f9f9;
+}
+
+/********************************************TRUYỆN TRANH*********************************************/
+
+.comic{
+   width: 100%;
+   margin-bottom: 35px;
+   background-color: #f9f9f9;
+   text-align: center;
+}
+.comic .border h1{
+   font-size: 20px;
+   padding-top: 10px;
+   padding-left: 10px;
+   text-align: left;
+   margin-bottom: 35px;
+   color: #f9f9f9;
+}
+
+
+
+/*********************************************SCIENCE*******************************************/
+.science{
+   width: 100%;
+   margin-bottom: 35px;
+   background-color: #f9f9f9;
+   text-align: center;
+}
+.science .border h1{
+   font-size: 20px;
+   padding-top: 10px;
+   padding-left: 10px;
+   text-align: left;
+   margin-bottom: 35px;
+   color: #f9f9f9;
+}
+
+/******************************************************HISTORY**************************************************/
+.history{
+   width: 100%;
+   margin-bottom: 35px;
+   background-color: #f9f9f9;
+   text-align: center;
+}
+.history .border h1{
+   font-size: 20px;
+   padding-top: 10px;
+   padding-left: 10px;
+   text-align: left;
+   margin-bottom: 35px;
+   color: #f9f9f9;
+}
+
+
+/*************************************************footer***********************************************/
+footer{
+   background-color: #919191;
+   height: 50px;
+}
+footer h3{
+   text-align: center;
+   padding-top: 15px;
+}
+/*************************************************cart*************************************************/
+.cart{
+   position: fixed;
+   height: 100vh;
+   width: 282px;
+   right: -100%;
+   top: 0;
+   background-color: #FFFFFF;
+   padding: 12px 20px;
+   overflow-y: scroll;
+   transition: all 0.4s ease;
+   padding-top: 30px;
+}
+.cart i{
+   cursor: pointer;
+   padding-left: 2%;
+   color: #C92127;
+}
+.cart i:hover{
+   color: #333333;
+}
+.cart h2{
+   text-align: center;
+   color: #333333;
+}
+.cart table{
+   width: 230px;
+}
+.cart table thead tr th{
+   color: #C92127;
+   padding: 2px 5px;
+}
+.cart table tbody tr td{
+   color: #333333;
+   border-bottom: 1px solid #3b3b3b;
+   padding: 30px 5px;
+}
+
+.cart table tr td{
+   margin-bottom: 1px solid #ddd;
+   padding: 12px 0;
+}
+
+.cart button{
+   width: 220px;
+   height: 40px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   border: none;
+   background-color: #C92127;
+   color: white;
+   align-items: center;
+   font-weight: bold;
+   cursor: pointer;
+}
+.cart button a{
+   color: white;
+   text-decoration: none;
+}
+/*************************************************buy*************************************************/
+.buy{
+   width: 450px;
+   height: 450px;
+   text-align: center;
+   padding-top: 10px;
+   margin: 0 auto;
+   background-color: #f9f9f9;
+}
+.buy input{
+   width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding-left: 20px;
+    size: 23px;
+    outline: none;
+}
+.buy button{
+   width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #C92127;
+    color: aliceblue;    
+}
+

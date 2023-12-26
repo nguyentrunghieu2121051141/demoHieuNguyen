@@ -1,0 +1,54 @@
+
+body{
+    background: url('bookshelve.jpg');
+    padding-top: 130px;
+    background-size: contain;
+   background-attachment: fixed;
+}
+
+.login{
+    width: 450px;
+    height: 370px;
+    background-color: #55D6C2;
+    text-align: center;
+    margin-top: 100px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color: rgba(255, 228, 181, 0.4);
+}
+h2{
+    color: #1b3951;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.login input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding-left: 20px;
+    outline: none;
+}
+.login input:focus {
+    border: 2px solid #1a73e8;
+}
+.login a{
+    color: brown;
+}
+.login p{
+    color: #1b3951;
+}
+.login #btn{
+    width: 220px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #A0522D;
+    color: white;
+}
+.login #btn:hover{
+    background-color: brown;
+}
